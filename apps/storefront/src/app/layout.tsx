@@ -24,8 +24,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="vi" className={inter.variable}>
-      <body className="min-h-screen flex flex-col bg-[#F8FAFC] text-[#111827] antialiased selection:bg-[#F97316]/20 selection:text-[#111827]">
+    <html lang="vi" className={inter.variable} suppressHydrationWarning>
+      <body
+        className="min-h-screen flex flex-col bg-[#F8FAFC] text-[#111827] antialiased selection:bg-[#F97316]/20 selection:text-[#111827]"
+        suppressHydrationWarning
+      >
         <CartProvider>
           <SiteHeader />
           <main className="flex-1">
