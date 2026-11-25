@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" fill="none">
+  <rect width="400" height="400" fill="#F1F5F9"/>
+  <path d="M160 160C160 148.954 168.954 140 180 140H220C231.046 140 240 148.954 240 160V240C240 251.046 231.046 260 220 260H180C168.954 260 160 251.046 160 240V160Z" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="185" cy="175" r="10" fill="#94A3B8"/>
+  <path d="M162 230L185 205L205 225L220 210L238 230" stroke="#94A3B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="200" y="290" text-anchor="middle" fill="#64748B" font-family="system-ui, sans-serif" font-size="14" font-weight="500">PeakGear Equipment</text>
+</svg>
