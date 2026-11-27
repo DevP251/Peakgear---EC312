@@ -129,7 +129,7 @@ export function SearchOverlay({ onClose }: SearchOverlayProps) {
                         alt={product.name}
                         width={48}
                         height={48}
-                        unoptimized
+                        quality={95}
                         className="size-full object-contain p-1"
                       />
                     </div>

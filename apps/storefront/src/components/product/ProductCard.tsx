@@ -67,6 +67,7 @@ export function ProductCard({ product }: ProductCardProps) {
           src={imgSrc}
           alt={productTitle}
           fill
+          quality={95}
           sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
           className="object-contain p-4 group-hover:scale-105 transition-transform duration-300"
           onError={() => setImgSrc("/images/placeholder.svg")}

@@ -1,12 +1,13 @@
 {
-  "name": "peakgear-storefront",
+  "name": "@dtc/storefront",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "postinstall": "node -e \"const fs=require('fs'),p=require('path');const s=p.resolve('../../node_modules/styled-jsx'),d=p.resolve('node_modules/styled-jsx');if(fs.existsSync(s)&&!fs.existsSync(d))fs.cpSync(s,d,{recursive:true})\""
   },
   "dependencies": {
     "react": "19.1.0",

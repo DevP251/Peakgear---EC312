@@ -154,7 +154,7 @@ export function CartDrawer() {
                           alt={it.name}
                           width={48}
                           height={48}
-                          unoptimized
+                          quality={95}
                           className="size-12 rounded object-contain border border-[#CBD5E1] bg-white shrink-0 p-1"
                         />
                         <div className="flex-1 min-w-0">
@@ -178,7 +178,7 @@ export function CartDrawer() {
                     alt={item.name}
                     width={64}
                     height={64}
-                    unoptimized
+                    quality={95}
                     className="size-16 rounded object-contain border border-[#CBD5E1] bg-[#F8FAFC] shrink-0 p-1"
                   />
                   <div className="flex-1 min-w-0 flex flex-col justify-between">

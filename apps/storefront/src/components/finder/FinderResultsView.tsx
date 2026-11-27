@@ -205,6 +205,8 @@ export function FinderResultsView({ recommendations }: FinderResultsViewProps) {
                             src={img}
                             alt={title}
                             fill
+                            quality={95}
+                            sizes="(max-width: 640px) 112px, 128px"
                             className="object-contain p-3"
                           />
                         </div>

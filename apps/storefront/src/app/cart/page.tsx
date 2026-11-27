@@ -193,7 +193,7 @@ export default function CartPage() {
                         return (
                           <div key={item.id} className="p-4 sm:p-5 flex items-center gap-4 bg-[#F8FAFC]">
                             <div className="relative w-16 h-16 bg-white border border-[#CBD5E1] rounded-xl overflow-hidden shrink-0">
-                              <Image src={img} alt={title} fill className="object-contain p-2" />
+                              <Image src={img} alt={title} fill quality={95} sizes="64px" className="object-contain p-2" />
                             </div>
                             <div className="flex-1 min-w-0">
                               <h4 className="text-xs sm:text-sm font-bold text-[#111827] line-clamp-1">
@@ -243,7 +243,7 @@ export default function CartPage() {
                     return (
                       <div key={item.id} className="p-4 sm:p-6 flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
                         <div className="relative w-20 h-20 sm:w-24 sm:h-24 bg-[#F8FAFC] border border-[#CBD5E1] rounded-xl overflow-hidden shrink-0">
-                          <Image src={img} alt={title} fill className="object-contain p-2" />
+                          <Image src={img} alt={title} fill quality={95} sizes="(max-width: 640px) 80px, 96px" className="object-contain p-2" />
                         </div>
 
                         <div className="flex-1 min-w-0">

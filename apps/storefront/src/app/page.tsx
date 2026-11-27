@@ -48,6 +48,8 @@ export default async function HomePage() {
             alt="PeakGear Outdoor Background"
             fill
             priority
+            quality={95}
+            sizes="100vw"
             className="object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-[#111827] via-[#111827]/80 to-transparent" />
@@ -174,6 +176,7 @@ export default async function HomePage() {
                     src={cat.image}
                     alt={cat.title}
                     fill
+                    quality={95}
                     sizes="(max-width: 768px) 100vw, 33vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-90"
                   />

@@ -115,6 +115,8 @@ export function BundleDetailView({ bundle: initialBundle }: BundleDetailViewProp
                   alt={bundle.title}
                   fill
                   priority
+                  quality={95}
+                  sizes="(max-width: 1024px) 100vw, 45vw"
                   className="object-cover opacity-90"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#111827]/80 via-transparent to-transparent" />
@@ -140,6 +142,8 @@ export function BundleDetailView({ bundle: initialBundle }: BundleDetailViewProp
                       src={comp.thumbnail || comp.image || "/images/placeholder.svg"}
                       alt={comp.title || comp.name}
                       fill
+                      quality={95}
+                      sizes="(max-width: 768px) 20vw, 100px"
                       className="object-contain p-1"
                     />
                   </div>
@@ -305,6 +309,8 @@ export function BundleDetailView({ bundle: initialBundle }: BundleDetailViewProp
                             src={comp.thumbnail || comp.image || "/images/placeholder.svg"}
                             alt={comp.title || comp.name}
                             fill
+                            quality={95}
+                            sizes="80px"
                             className="object-contain p-2"
                           />
                         </div>
@@ -418,6 +424,8 @@ export function BundleDetailView({ bundle: initialBundle }: BundleDetailViewProp
                         src={altProd.thumbnail || altProd.images[0] || "/images/placeholder.svg"}
                         alt={altProd.title || altProd.name}
                         fill
+                        quality={95}
+                        sizes="48px"
                         className="object-contain p-1"
                       />
                     </div>
