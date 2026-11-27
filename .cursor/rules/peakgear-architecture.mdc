@@ -1,0 +1,28 @@
+---
+description: Quy tắc kiến trúc cốt lõi cho hệ sinh thái thương mại điện tử Peakgear (MedusaJS v2 + Next.js Storefront EC312 + React Native Expo App EC402)
+alwaysApply: true
+---
+
+# Kiến trúc hệ thống Peakgear (EC312 & EC402)
+- **Tech Stack tổng thể:**
+  - **Backend (`apps/backend`):** MedusaJS v2 + PostgreSQL trên Supabase.
+  - **Web Storefront (`apps/storefront`):** Next.js App Router + TypeScript (Đồ án EC312).
+  - **Mobile App (`apps/mobile`):** React Native (Expo + TypeScript) chạy trên Android Studio (Đồ án EC402).
+- **Tiền tệ & Khu vực:** Cửa hàng chỉ hoạt động tại Việt Nam, đơn vị tiền tệ là `vnd` (số nguyên, KHÔNG nhân 100).
+
+## 1. Quy tắc Backend (MedusaJS v2)
+- Sử dụng `@medusajs/framework/utils` (`MedusaService`, `model`) để tạo Custom Module. Tuyệt đối không dùng cấu trúc service/repository của Medusa v1.
+- Mọi nghiệp vụ ghi/sửa dữ liệu phức tạp phải bọc trong `createWorkflow` và `createStep` từ `@medusajs/framework/workflows-sdk`.
+- Mọi API endpoint trả về JSON phải sạch, chuẩn RESTful để phục vụ đồng thời cho cả Next.js Web và React Native App.
+
+## 2. Quy tắc Web Storefront (`apps/storefront`)
+- Ưu tiên Server Components để fetch dữ liệu từ MedusaJS Backend (`http://localhost:9000`). Chỉ dùng `'use client'` khi cần tương tác state (giỏ hàng, bộ lọc, form quiz).
+- Mọi request gọi API Storefront bắt buộc đính kèm header `x-publishable-api-key` lấy từ `NEXT_PUBLIC_MEDUSA_PUBLISHABLE_KEY`.
+
+## 3. Quy tắc Mobile App (`apps/mobile` - React Native / Expo)
+- **Kết nối mạng trên máy ảo Android Studio:** Tuyệt đối không hardcode `localhost:9000` trong app. Sử dụng biến môi trường `EXPO_PUBLIC_MEDUSA_BACKEND_URL` (mặc định `http://10.0.2.2:9000` cho Android Emulator) kèm header `x-publishable-api-key`.
+- **Kiến trúc Offline-first & Local DB:** Sử dụng `expo-sqlite` (hoặc `AsyncStorage`) để lưu cache danh sách sản phẩm, giỏ hàng và kết quả **Smart Gear-Finder** ngay trên thiết bị, đảm bảo app mở lên hiển thị dữ liệu tức thì và xem được checklist khi mất mạng.
+- **Push Notifications:** Sử dụng `expo-notifications` kết hợp Expo Push API để nhận thông báo đẩy từ MedusaJS Subscribers (`order.placed`, `order.fulfillment_created`, khuyến mãi).
+
+## 4. Bảo mật chung
+- Không bao giờ hardcode chuỗi kết nối Supabase (`DATABASE_URL`), Cloudinary secret hoặc API key vào code.
