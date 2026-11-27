@@ -231,3 +231,20 @@ claude mcp add --transport http medusa-cloud https://cloud.medusajs.com/mcp # or
 - `.env` / `.env.local` — never commit, print, or copy secret values out of them. Edit `.env.template` instead when documenting a new variable.
 - Existing migrations in `src/modules/*/migrations/` — add a new migration rather than rewriting one that may already have run.
 - Don't run destructive DB commands (drops, resets) against the user's database without explicit confirmation.
+
+---
+
+## Peakgear Project Context & Skills Directory (EC312 & EC402)
+
+- **Project Domain:** Peakgear — Headless Trekking & Outdoor E-Commerce (~500 SKUs), Vietnam market (`vnd`, integer amounts, never multiply by 100).
+- **Business Spec:** Always read `PROJECT_SPEC.md` at the repo root before designing or modifying features.
+- **Mobile Companion App (`apps/mobile` - EC402):** React Native / Expo app running on Android Emulator (`EXPO_PUBLIC_MEDUSA_BACKEND_URL=http://10.0.2.2:9000`), using `expo-sqlite` for offline product/checklist caching and `expo-notifications` triggered by Medusa event subscribers.
+
+### Skills Architecture
+Agent skills are split across two standard directories (both are actively loaded by Cursor):
+1. **Official & Framework Skills (`.agents/skills/`):** Installed via `npx skills` (e.g., `building-with-medusa`, `building-storefronts`, `vercel-react-best-practices`, `web-design-guidelines`). Use these for framework-level best practices.
+2. **Peakgear Custom Business Skills (`.cursor/skills/`):**
+   - `medusa-custom-modules` — Scaffold custom modules, DML models, workflows, and Store API routes in `apps/backend`.
+   - `storefront-medusa-wiring` — Replace mock data in `apps/storefront` with live `@medusajs/js-sdk` calls.
+   - `peakgear-smart-features` — Business logic & API contracts for **Smart Gear-Finder** (`POST /store/gear-finder`) and **Smart Bundles** (`GET /store/bundles`, `POST /store/carts/:id/bundles`).
+   - `peakgear-docs-writer` — Generate `docs/API.md`, `README.md`, and Mermaid diagrams from actual codebase.

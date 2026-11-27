@@ -1,0 +1,131 @@
+{
+  "version": 2,
+  "skills": {
+    "building-admin-dashboard-customizations": {
+      "source": "medusajs/medusa-agent-skills",
+      "commit": "ba2af48b8854506adbf08670ed9b0fb2f98798c6",
+      "sourceType": "github",
+      "skillPath": "plugins/medusa-dev/skills/building-admin-dashboard-customizations/SKILL.md",
+      "computedHash": "e6e38165546b523df7b21cb37fd55628ee31c7f0014fc135e6ea78740d5a1417"
+    },
+    "building-storefronts": {
+      "source": "medusajs/medusa-agent-skills",
+      "commit": "ba2af48b8854506adbf08670ed9b0fb2f98798c6",
+      "sourceType": "github",
+      "skillPath": "plugins/medusa-dev/skills/building-storefronts/SKILL.md",
+      "computedHash": "1d360ecfde1cc2f77fbeb28c62bd5702a074cf5cc429b489e722c6a8ce79e236"
+    },
+    "building-with-medusa": {
+      "source": "medusajs/medusa-agent-skills",
+      "commit": "ba2af48b8854506adbf08670ed9b0fb2f98798c6",
+      "sourceType": "github",
+      "skillPath": "plugins/medusa-dev/skills/building-with-medusa/SKILL.md",
+      "computedHash": "4c4a92bb0e7b7706861f8c55b133b2f1abfb9bacbc66d73420b3bdbf74448997"
+    },
+    "db-generate": {
+      "source": "medusajs/medusa-agent-skills",
+      "commit": "ba2af48b8854506adbf08670ed9b0fb2f98798c6",
+      "sourceType": "github",
+      "skillPath": "plugins/medusa-dev/skills/db-generate/SKILL.md",
+      "computedHash": "ac6eb499cefe18b0160afb4dea55488fd16cb932283d4f28a1bf1bad488057d6"
+    },
+    "db-migrate": {
+      "source": "medusajs/medusa-agent-skills",
+      "commit": "ba2af48b8854506adbf08670ed9b0fb2f98798c6",
+      "sourceType": "github",
+      "skillPath": "plugins/medusa-dev/skills/db-migrate/SKILL.md",
+      "computedHash": "94f3b50a3524f362b3495296f44e5aa9c430c4a996e80035db85884dd0b34da8"
+    },
+    "expo-design-system": {
+      "source": "expo/skills",
+      "commit": "335359577cbb61cf4097c14ac88ee2609726c85f",
+      "sourceType": "github",
+      "skillPath": "plugins/expo/skills/expo-design-system/SKILL.md",
+      "computedHash": "254dcadd51eadecb0582b8b2ae5083cf958f55fad13bc5d97ebac1f511f770c5"
+    },
+    "expo-dev-client": {
+      "source": "expo/skills",
+      "commit": "335359577cbb61cf4097c14ac88ee2609726c85f",
+      "sourceType": "github",
+      "skillPath": "plugins/expo/skills/expo-dev-client/SKILL.md",
+      "computedHash": "e04d875eff8cbe80ff8179179eea3ed82865c9dbb9eb3172c831dcb4d94e632c"
+    },
+    "expo-dom": {
+      "source": "expo/skills",
+      "commit": "335359577cbb61cf4097c14ac88ee2609726c85f",
+      "sourceType": "github",
+      "skillPath": "plugins/expo/skills/expo-dom/SKILL.md",
+      "computedHash": "5f1a8d6723e2cf30cb080cdfccf5e828f3d2791ec2948629ac52372cd51f1f95"
+    },
+    "expo-native-ui": {
+      "source": "expo/skills",
+      "commit": "335359577cbb61cf4097c14ac88ee2609726c85f",
+      "sourceType": "github",
+      "skillPath": "plugins/expo/skills/expo-native-ui/SKILL.md",
+      "computedHash": "6f2514b968534810bbabec5003d7ff9caa8553385e19fe6d6a7685ab5882e744"
+    },
+    "expo-project-structure": {
+      "source": "expo/skills",
+      "commit": "335359577cbb61cf4097c14ac88ee2609726c85f",
+      "sourceType": "github",
+      "skillPath": "plugins/expo/skills/expo-project-structure/SKILL.md",
+      "computedHash": "dfd51f02b0d7668cb3cd2c49aa98db2aab0c05a4be893564944954fa71444351"
+    },
+    "expo-ui": {
+      "source": "expo/skills",
+      "commit": "335359577cbb61cf4097c14ac88ee2609726c85f",
+      "sourceType": "github",
+      "skillPath": "plugins/expo/skills/expo-ui/SKILL.md",
+      "computedHash": "7314eef4d38959d0223f70ed05df364ef67b976dc181fa223cc482af338bc3d2"
+    },
+    "expo-web-to-native": {
+      "source": "expo/skills",
+      "commit": "335359577cbb61cf4097c14ac88ee2609726c85f",
+      "sourceType": "github",
+      "skillPath": "plugins/expo/skills/expo-web-to-native/SKILL.md",
+      "computedHash": "65528c78dbfdd32470b4f7f68960fd3545e6589d381c04fab44876466dd7c9d8"
+    },
+    "storefront-best-practices": {
+      "source": "medusajs/medusa-agent-skills",
+      "commit": "ba2af48b8854506adbf08670ed9b0fb2f98798c6",
+      "sourceType": "github",
+      "skillPath": "plugins/ecommerce-storefront/skills/storefront-best-practices/SKILL.md",
+      "computedHash": "369856c5ae558bdf168deb6cf1401c0d4768822d160c2c67e03ffda7528a6fa0"
+    },
+    "supabase-postgres-best-practices": {
+      "source": "supabase/agent-skills",
+      "commit": "c9be0e931b7930f7d02126d04774d904c381e7d7",
+      "sourceType": "github",
+      "skillPath": "skills/supabase-postgres-best-practices/SKILL.md",
+      "computedHash": "3eb972c2d7c818e544e35cc33ea8d7147d4d78ae08142ef40037b0fbac7a2505"
+    },
+    "vercel-composition-patterns": {
+      "source": "vercel-labs/agent-skills",
+      "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
+      "sourceType": "github",
+      "skillPath": "skills/composition-patterns/SKILL.md",
+      "computedHash": "f711ed8b16162eaa712abbcdbbae6c926f86c57e60127735fecc3ad0dd85b3fa"
+    },
+    "vercel-react-best-practices": {
+      "source": "vercel-labs/agent-skills",
+      "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
+      "sourceType": "github",
+      "skillPath": "skills/react-best-practices/SKILL.md",
+      "computedHash": "7991ed4fbecdac23f47c1a40c243e00a212a9e7f3604db93959b3ae11dffe299"
+    },
+    "vercel-react-native-skills": {
+      "source": "vercel-labs/agent-skills",
+      "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
+      "sourceType": "github",
+      "skillPath": "skills/react-native-skills/SKILL.md",
+      "computedHash": "4c160f1f4e623b989cadb71f42a0813be574d172acf5e32a6411c87f3e28c05a"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "commit": "5a37a6329fbad3666c3207392a6a7c0110e92efb",
+      "sourceType": "github",
+      "skillPath": "skills/web-design-guidelines/SKILL.md",
+      "computedHash": "5994e4cfd86144903d2ba750f862b9e36af15e3297aac983679e347b99f6cb71"
+    }
+  }
+}
