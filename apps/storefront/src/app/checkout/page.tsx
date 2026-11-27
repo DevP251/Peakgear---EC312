@@ -550,6 +550,8 @@ export default function CheckoutPage() {
                             src={img}
                             alt={title}
                             fill
+                            quality={95}
+                            sizes="48px"
                             className="object-contain p-1"
                           />
                         </div>

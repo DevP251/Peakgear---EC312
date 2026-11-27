@@ -87,7 +87,9 @@ export function BundleCard({ bundle }: BundleCardProps) {
                         src={img}
                         alt={title}
                         fill
-                        className="object-contain"
+                        quality={95}
+                        sizes="96px"
+                        className="object-contain p-1"
                       />
                     </div>
                     <span className="text-[10px] font-medium text-[#111827] line-clamp-1">

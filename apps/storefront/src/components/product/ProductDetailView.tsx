@@ -114,7 +114,8 @@ export function ProductDetailView({ product, relatedBundles }: ProductDetailView
                   alt={productTitle}
                   fill
                   priority
-                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  quality={95}
+                  sizes="(max-width: 768px) 100vw, 50vw"
                   className="object-contain p-6"
                   onError={() => setActiveImage("/images/placeholder.svg")}
                 />
@@ -135,6 +136,8 @@ export function ProductDetailView({ product, relatedBundles }: ProductDetailView
                         src={img}
                         alt={`${productTitle} - thumb ${idx + 1}`}
                         fill
+                        quality={95}
+                        sizes="80px"
                         className="object-contain p-2"
                         onError={(e) => {
                           const target = e.target as HTMLImageElement;
